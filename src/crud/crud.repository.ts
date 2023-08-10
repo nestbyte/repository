@@ -1,5 +1,5 @@
 import { NestByteOrmDb } from '@nestbyte/orm';
-import { eq, InferModel } from 'drizzle-orm';
+import { InferModel } from 'drizzle-orm';
 import { PgTableWithColumns } from 'drizzle-orm/pg-core';
 
 export abstract class CrudRepository<T extends PgTableWithColumns<any>> {
